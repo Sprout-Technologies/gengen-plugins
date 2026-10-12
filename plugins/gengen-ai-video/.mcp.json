@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gengen": {
+      "type": "http",
+      "url": "https://gengen.farm/api/mcp"
+    }
+  }
+}
