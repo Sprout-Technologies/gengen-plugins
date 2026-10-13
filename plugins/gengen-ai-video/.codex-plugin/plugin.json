@@ -1,6 +1,6 @@
 {
   "name": "gengen-ai-video",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Create product and idea videos with your assistant and GENGEN AI Projects.",
   "author": {
     "name": "Sprout Technologies Inc.",
@@ -26,7 +26,7 @@
     "defaultPrompt": [
       "Create a product video from my materials.",
       "Turn my idea into a video script.",
-      "Adapt the creative idea from a reference video."
+      "Connect or reconnect my GENGEN account and check the connection."
     ],
     "websiteURL": "https://gengen.farm/remix-plugin",
     "supportURL": "https://gengen.farm/support",
@@ -99,7 +99,7 @@
         "commerce_description": "Generation consumes existing GENGEN wallet balance after the user approves the script, settings, and estimate; final charges depend on actual usage. The MCP tools do not sell credits, start subscriptions, or open checkout. Confirm eligibility of this metered digital-service model with OpenAI before submission."
       },
       "publication": {
-        "release_notes": "0.2.5 prepares public directory metadata, support and policy links, and five positive and three negative review scenarios. The package includes the original-media upload helper and a remote OAuth MCP connection. Review scenarios still require execution with a dedicated reviewer account before submission."
+        "release_notes": "0.2.6 adds account connection and recovery in Codex with the gengen-connect skill. Setup opens browser authorization when needed and verifies authenticated MCP discovery and project-panel access. Review scenarios still require execution with a dedicated reviewer account before submission."
       }
     }
   },

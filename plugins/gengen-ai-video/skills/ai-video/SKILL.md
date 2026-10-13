@@ -26,8 +26,11 @@ question tool is available, ask the same concise questions in conversation.
 Native question dialogs collect text and choices, not file bytes. For materials,
 use the host's attachment flow or the project's Materials tab. An idea alone is
 sufficient. Product materials and a reference video are optional.
-Connect the user's GENGEN account through the host OAuth flow when requested by
-its tools. Never ask for passwords, access tokens, or an API key in conversation.
+If GENGEN tools are unavailable or require account authorization in Codex, use
+the bundled [gengen-connect skill](../gengen-connect/SKILL.md) to connect and
+verify access before continuing. The user can also ask "Reconnect GENGEN" or
+invoke `$gengen-connect`. Other hosts use their own OAuth connection flow.
+Never ask for passwords, access tokens, or an API key in conversation.
 
 Create a project with `create_ai_project`, retaining its request ID across retries.
 Use `list_ai_projects` and `get_ai_project` to resume an existing project. A project
