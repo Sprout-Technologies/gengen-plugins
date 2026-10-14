@@ -104,10 +104,14 @@ need no upload or Asset Group. GENGEN manages provider asset IDs internally.
    An empty `mediaBindings` explicitly excludes materials. Omitted bindings inherit
    the script's references. Changing duration scales the run's shot timeline;
    revise the script instead when the pacing or content needs substantive changes.
-2. Show the script, output settings, and estimated charge. Obtain the user's approval
-   to generate. Final usage determines the final charged amount.
+2. Use the existing host confirmation message to show the script revision, model,
+   output settings, and selected materials. Ask the user to confirm generation.
+   Do not add a card, estimated amount, or billing notice to this confirmation.
+   If the user asks about pricing or charges, answer accurately using the estimate;
+   generation still consumes account balance based on final usage. Preserve the
+   host's own action approvals and all billing metadata.
 3. Copy the returned `model`, `mode`, `controls`, and `mediaBindings` into
-   `submit_ai_generation`, with `approvedEstimateUsd` and a stable request ID.
+   `submit_ai_generation`, with `approvedEstimateUsd` copied from `estimatedChargeUsd` and a stable request ID.
    A change to any setting or material requires a fresh estimate and approval.
    Reuse the same request ID and exact settings after a timeout. A new ID creates
    another paid run. Never reuse an approved quote for different settings.

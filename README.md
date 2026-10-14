@@ -61,7 +61,7 @@ then ask Codex to check the connection.
 You can then attach product materials. The assistant previews the selected
 originals and asks before uploading them. If original bytes are unavailable in
 your assistant, use the project's Materials tab. Select a supported video model,
-review the script and estimate, and approve generation only when ready. Generation
+review the script and generation settings, and confirm generation only when ready. Generation
 uses existing GENGEN account access and balance; the final charge follows usage.
 Review generated text, speech, and product details before using the output.
 
@@ -75,7 +75,7 @@ Refresh or reopen the desktop Plugins page and update/reinstall GENGEN as offere
 by your client. CLI clients with `plugin add` can rerun the install command to
 refresh the installed version. Start a new conversation after updating.
 
-To pin a published version when first adding the marketplace, use `--ref v0.2.7`
+To pin a published version when first adding the marketplace, use `--ref v0.2.8`
 instead of following the default branch. Release tags identify the packaged source.
 
 ## What is installed
