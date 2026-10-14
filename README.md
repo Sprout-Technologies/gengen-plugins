@@ -1,4 +1,4 @@
-# GenGen for Codex
+# GENGEN for Codex
 
 Create video projects from ideas and original materials with your assistant and
 [GENGEN](https://gengen.farm/remix-plugin). Published by **Sprout Technologies Inc.**
@@ -10,7 +10,7 @@ Only the plugin files are included; the hosted application is separate.
 ## Install
 
 Open the [plugin homepage](https://gengen.farm/remix-plugin), choose **Set up
-Codex**, and send the prepared request. Codex installs GenGen, starts account
+Codex**, and send the prepared request. Codex installs GENGEN, starts account
 authorization when needed, and checks the live connection after you consent.
 **Manual installation** on the homepage copies the same complete request if the
 desktop link does not open. The request is not sent automatically.
@@ -27,7 +27,7 @@ These commands stop if installation fails and otherwise open browser authorizati
 Keep the terminal running while you sign in and approve the connection. The
 `127.0.0.1` success page returns authorization to Codex; close it and return to
 Codex. Ask Codex to "Check my GENGEN connection" using `$gengen-connect` to verify
-access after manual installation. You can also install GenGen from the GENGEN
+access after manual installation. You can also install GENGEN from the GENGEN
 source on the desktop Plugins page, then use this same connection skill.
 
 If `codex` is unavailable or does not recognize `plugin`, use the current Codex
@@ -49,7 +49,7 @@ If sign-in is cancelled, times out, or verification fails, the helper stops and
 offers this retry entry. Use a new attempt rather than reopening an expired
 authorization link. A website authorization record or saved OAuth status alone
 does not prove the current device can connect. If the helper cannot run, open
-the installed GenGen plugin's connection controls in Codex or rerun the manual
+the installed GENGEN plugin's connection controls in Codex or rerun the manual
 `codex mcp login gengen --scopes openid --oauth-client-registration dcr` command,
 then ask Codex to check the connection.
 
@@ -71,11 +71,11 @@ Review generated text, speech, and product details before using the output.
 codex plugin marketplace upgrade gengen
 ```
 
-Refresh or reopen the desktop Plugins page and update/reinstall GenGen as offered
+Refresh or reopen the desktop Plugins page and update/reinstall GENGEN as offered
 by your client. CLI clients with `plugin add` can rerun the install command to
 refresh the installed version. Start a new conversation after updating.
 
-To pin a published version when first adding the marketplace, use `--ref v0.2.6`
+To pin a published version when first adding the marketplace, use `--ref v0.2.7`
 instead of following the default branch. Release tags identify the packaged source.
 
 ## What is installed

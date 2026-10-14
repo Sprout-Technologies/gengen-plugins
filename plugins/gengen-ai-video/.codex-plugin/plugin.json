@@ -1,6 +1,6 @@
 {
   "name": "gengen-ai-video",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Create product and idea videos with your assistant and GENGEN AI Projects.",
   "author": {
     "name": "Sprout Technologies Inc.",
@@ -9,7 +9,7 @@
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "GenGen",
+    "displayName": "GENGEN",
     "shortDescription": "Create videos from your ideas",
     "longDescription": "Create video projects from ideas, product materials, or an optional reference video. Work with your assistant on a script, save revisions and original materials in GENGEN, choose a supported model, and review an estimate before starting generation. Reopen saved projects to check progress and play completed videos. Requires a GENGEN account with sufficient existing access and balance. Uploads require confirmation; if your assistant cannot access original file bytes, use the project upload panel. Generated text, speech, and product details need review.",
     "developerName": "Sprout Technologies Inc.",
@@ -96,10 +96,12 @@
             }
           ]
         },
-        "commerce_description": "Generation consumes existing GENGEN wallet balance after the user approves the script, settings, and estimate; final charges depend on actual usage. The MCP tools do not sell credits, start subscriptions, or open checkout. Confirm eligibility of this metered digital-service model with OpenAI before submission."
+        "commerce_description": "Generation consumes existing GENGEN wallet balance after the user approves the script, settings, and estimate; final charges depend on actual usage. The MCP tools do not sell credits, start subscriptions, or open checkout. Confirm eligibility of this metered digital-service model with OpenAI before submission.",
+        "demo_recording_url": "https://l20eeayi6dgtqms6.public.blob.vercel-storage.com/plugins/review/gengen-0.2.6-walkthrough-host-fc32986fbb45-PtkvJyc3ns7DhOvJ4Bl8x4RXmimwDc.mp4"
       },
       "publication": {
-        "release_notes": "0.2.6 adds account connection and recovery in Codex with the gengen-connect skill. Setup opens browser authorization when needed and verifies authenticated MCP discovery and project-panel access. Review scenarios still require execution with a dedicated reviewer account before submission."
+        "release_notes": "0.2.7 standardizes the plugin display name, installation instructions, and connection messages as GENGEN. The stable package identifier remains gengen-ai-video and existing account connections continue to use the same MCP endpoint.",
+        "countries": []
       }
     }
   },

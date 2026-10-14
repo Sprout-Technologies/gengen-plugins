@@ -24,7 +24,7 @@ export function resolveCodex(explicit) {
       if (help.includes('--oauth-client-registration')) return candidate;
     } catch { /* Try the next installed CLI without changing the user's installation. */ }
   }
-  throw new Error('A current Codex CLI is required. Use the GenGen connection controls in Codex or pass --codex with its CLI path.');
+  throw new Error('A current Codex CLI is required. Use the GENGEN connection controls in Codex or pass --codex with its CLI path.');
 }
 
 export function checkConfiguration(cli) {
@@ -34,10 +34,10 @@ export function checkConfiguration(cli) {
       encoding: 'utf8', timeout: 15_000, stdio: ['ignore', 'pipe', 'ignore'],
     }));
   } catch {
-    throw new Error('The installed GENGEN MCP server was not found. Install and enable GenGen in Codex first.');
+    throw new Error('The installed GENGEN MCP server was not found. Install and enable GENGEN in Codex first.');
   }
   if (!config.enabled || config.transport?.url !== ENDPOINT) {
-    throw new Error('Enable the GenGen plugin with its official https://gengen.farm/api/mcp connection before authorizing.');
+    throw new Error('Enable the GENGEN plugin with its official https://gengen.farm/api/mcp connection before authorizing.');
   }
 }
 

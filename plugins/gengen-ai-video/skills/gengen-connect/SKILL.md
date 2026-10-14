@@ -1,6 +1,6 @@
 ---
 name: gengen-connect
-description: Connect, check, or reauthorize a GENGEN account in Codex after installing GenGen, when login did not finish, or when GENGEN tools require authentication. Handles requests such as "Connect GENGEN" and "Reconnect GENGEN" without creating a video.
+description: Connect, check, or reauthorize a GENGEN account in Codex after installing GENGEN, when login did not finish, or when GENGEN tools require authentication. Handles requests such as "Connect GENGEN" and "Reconnect GENGEN" without creating a video.
 ---
 
 # Connect GENGEN
@@ -40,7 +40,7 @@ cancelled login, or failed check, explain the reported failure and offer
 `$gengen-connect` / "Reconnect GENGEN" as the retry entry. Do not repeat login
 automatically after a failed attempt or log the user out to fix it.
 
-If Node.js or a supported CLI is unavailable, use the installed GenGen plugin's
+If Node.js or a supported CLI is unavailable, use the installed GENGEN plugin's
 GENGEN connection controls in Codex. The manual CLI alternative is:
 
 ```sh
