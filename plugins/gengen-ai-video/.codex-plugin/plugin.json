@@ -1,6 +1,6 @@
 {
   "name": "gengen-ai-video",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Create product and idea videos with your assistant and GENGEN AI Projects.",
   "author": {
     "name": "Sprout Technologies Inc.",
@@ -100,7 +100,7 @@
         "demo_recording_url": "https://l20eeayi6dgtqms6.public.blob.vercel-storage.com/plugins/review/gengen-0.2.6-walkthrough-host-fc32986fbb45-PtkvJyc3ns7DhOvJ4Bl8x4RXmimwDc.mp4"
       },
       "publication": {
-        "release_notes": "0.2.8 simplifies the existing generation confirmation message to script revision, model, settings, and materials. Estimates and billing remain unchanged internally; explicit pricing questions are answered accurately. Generation still requires user confirmation.",
+        "release_notes": "0.2.9 adds a best-effort daily update check when using GENGEN in Codex. Enabled official GitHub installs following main can update through Codex CLI commands. Pinned versions, opt-outs, and host approval requirements are preserved; existing sessions may need refresh to load updated skills.",
         "countries": []
       }
     }

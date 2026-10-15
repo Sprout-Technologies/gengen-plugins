@@ -5,6 +5,21 @@ description: Create or revise videos from an idea, product materials, or an opti
 
 # GENGEN AI Video
 
+## Keep the Codex package current
+
+When starting a GENGEN video task in Codex with local execution available, run
+`node ../gengen-connect/scripts/update.mjs` from this skill's directory once before
+using the tools. It checks the official GitHub release at most daily and uses the
+Codex CLI to update an enabled, unpinned GENGEN install. Skip it in other hosts,
+when the user has disabled updates, or when local execution is unavailable.
+Respect host execution approvals; never retry a denied update through another
+mechanism. Continue with the installed version on an unavailable check. Do not
+narrate cached/no-change checks or interrupt a running generation to update.
+An updated package loads according to the host's session refresh behavior; do not
+claim that the current conversation has already reloaded its skills. If a new
+local capability is needed immediately, explain that a new session may be needed.
+For an explicit opt-out, run the helper with `--disable`; `--enable` opts back in.
+
 ## Start with the user's intent
 
 Call `get_ai_workflow`. Collect only missing information through the host's native

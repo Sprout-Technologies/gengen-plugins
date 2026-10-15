@@ -75,8 +75,28 @@ Refresh or reopen the desktop Plugins page and update/reinstall GENGEN as offere
 by your client. CLI clients with `plugin add` can rerun the install command to
 refresh the installed version. Start a new conversation after updating.
 
-To pin a published version when first adding the marketplace, use `--ref v0.2.8`
+To pin a published version when first adding the marketplace, use `--ref v0.2.9`
 instead of following the default branch. Release tags identify the packaged source.
+
+## Automatic checks while using GENGEN
+
+Starting with 0.2.9, the Codex skills run a best-effort package check when used,
+at most once per day. If a newer stable version is available, the helper refreshes
+the official `gengen` marketplace and installs it with the Codex CLI. It only
+updates enabled installs following the official repository's `main` branch.
+Pinned tags/commits, local installs, other marketplaces, and opt-outs are preserved.
+Network failures leave the current installation usable and retry on a later use
+(after one hour). This does not install a background service or change OAuth.
+
+Existing users must update once to receive this helper. Host execution approvals
+still apply, and a new session may be needed to load changed skill files. It does
+not guarantee unattended updates while Codex is closed. Server-provided models,
+parameters, and project UI continue to update independently of the package.
+
+Ask Codex to disable or enable GENGEN automatic updates; the helper supports
+`node scripts/update.mjs --disable` / `--enable` from the `gengen-connect` skill
+directory. `GENGEN_PLUGIN_AUTO_UPDATE=0` also skips the check for that process.
+Connection checks using `connect.mjs --check` remain read-only.
 
 ## What is installed
 

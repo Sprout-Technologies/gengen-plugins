@@ -8,6 +8,16 @@ description: Connect, check, or reauthorize a GENGEN account in Codex after inst
 Use this workflow for account setup and recovery. The user can invoke
 `$gengen-connect` or ask "Reconnect GENGEN" in Codex.
 
+Before a normal connection or reconnection in Codex, run
+`node scripts/update.mjs` from this skill's directory. This is a best-effort daily
+update of the official unpinned GitHub package using the Codex CLI. Respect host
+approvals and user opt-outs; skip it for `--check` status-only requests so those
+remain read-only. Continue connection setup if updating is unavailable. Do not
+retry denied updates or silently start a different installation mechanism. The
+helper accepts `--disable` and `--enable` when the user requests that preference.
+Cached/no-change checks need no narration; newly installed skills may require a
+new host session before they are loaded.
+
 Run the bundled helper with Node.js 18+ from this skill's directory:
 
 ```sh
